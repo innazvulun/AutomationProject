@@ -1,0 +1,635 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>43/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Apr 22 16:15:47 IDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>832 seconds (832403 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.Destinations.DestinationsElementsTest.tc02_DestinationsPopular()'><b>tc02_DestinationsPopular</b><br>Test class: tests.Destinations.DestinationsElementsTest<br>Test method: Check Popular Destinations items Links.</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 16, Size: 16
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at pageObjects.DestinationsPage.checkPopularDestinationsItems(DestinationsPage.java:160)
+	at tests.Destinations.DestinationsElementsTest.tc02_DestinationsPopular(DestinationsElementsTest.java:27)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1052048853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1052048853'><pre>java.lang.IndexOutOfBoundsException: Index: 16, Size: 16
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at pageObjects.DestinationsPage.checkPopularDestinationsItems(DestinationsPage.java:160)
+	at tests.Destinations.DestinationsElementsTest.tc02_DestinationsPopular(DestinationsElementsTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>256</td>
+<td>tests.Destinations.DestinationsElementsTest@127e70c5</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_2.tc05_SaveTripWithLogin()'><b>tc05_SaveTripWithLogin</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_2<br>Test method: Save trip and check if save correctly, incluse login action before.</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [668f29347017e011900cfda521489b01, getElementAttribute {id=ce3ef3c1-2b8d-4cba-81bf-986cf27b5051, name=style}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Inna\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61246}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61246/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (668f29347017e011900cfda521489b01)] -&gt; css selector: .app-header__desktop  a[target=&apos;_self&apos;]]
+Session ID: 668f29347017e011900cfda521489b01
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:158)
+	at pageObjects.BasePage.highlightElement(BasePage.java:115)
+	at pageObjects.BasePage.click(BasePage.java:43)
+	at pageObjects.HeaderSection.goToMyTripsPage(HeaderSection.java:84)
+	at tests.CreateATrip.CreateATripFlowDestination_2.tc05_SaveTripWithLogin(CreateATripFlowDestination_2.java:63)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1264354494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1264354494'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [668f29347017e011900cfda521489b01, getElementAttribute {id=ce3ef3c1-2b8d-4cba-81bf-986cf27b5051, name=style}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Inna\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61246}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61246/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (668f29347017e011900cfda521489b01)] -&gt; css selector: .app-header__desktop  a[target=&apos;_self&apos;]]
+Session ID: 668f29347017e011900cfda521489b01
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:158)
+	at pageObjects.BasePage.highlightElement(BasePage.java:115)
+	at pageObjects.BasePage.click(BasePage.java:43)
+	at pageObjects.HeaderSection.goToMyTripsPage(HeaderSection.java:84)
+	at tests.CreateATrip.CreateATripFlowDestination_2.tc05_SaveTripWithLogin(CreateATripFlowDestination_2.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>17</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_2@4108fa66</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_3.tc05_SuggestionsAccordingToSelections_AgesSelected()'><b>tc05_SuggestionsAccordingToSelections_AgesSelected</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_3<br>Test method: Define ages and check selected data correct displayed in last step (suggestions).</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.sb-desktop__bar-items &gt; div:nth-child(3) &gt; button&quot;}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c1b5213ddeade1182ccb521f921f0bfb, findElement {using=css selector, value=.sb-desktop__bar-items &gt; div:nth-child(3) &gt; button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Inna\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61511/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c1b5213ddeade1182ccb521f921f0bfb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.getAttribute(Unknown Source)
+	at pageObjects.BasePage.highlightElement(BasePage.java:115)
+	at pageObjects.BasePage.click(BasePage.java:43)
+	at pageObjects.SuggestionsPage.tripComposition(SuggestionsPage.java:64)
+	at tests.CreateATrip.CreateATripFlowDestination_3.tc05_SuggestionsAccordingToSelections_AgesSelected(CreateATripFlowDestination_3.java:73)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1634953239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1634953239'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.sb-desktop__bar-items &gt; div:nth-child(3) &gt; button&quot;}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c1b5213ddeade1182ccb521f921f0bfb, findElement {using=css selector, value=.sb-desktop__bar-items &gt; div:nth-child(3) &gt; button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Inna\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61511/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c1b5213ddeade1182ccb521f921f0bfb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.getAttribute(Unknown Source)
+	at pageObjects.BasePage.highlightElement(BasePage.java:115)
+	at pageObjects.BasePage.click(BasePage.java:43)
+	at pageObjects.SuggestionsPage.tripComposition(SuggestionsPage.java:64)
+	at tests.CreateATrip.CreateATripFlowDestination_3.tc05_SuggestionsAccordingToSelections_AgesSelected(CreateATripFlowDestination_3.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>4</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_3.tc04_SelectTripInterests()'><b>tc04_SelectTripInterests</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_3<br>Test method: Check next step page display and select trip Interests.</td>
+<td><div><pre>java.lang.AssertionError: expected [Your suggestions] but found [Specify your interest]
+	at tests.CreateATrip.CreateATripFlowDestination_3.tc04_SelectTripInterests(CreateATripFlowDestination_3.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1750016234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1750016234'><pre>java.lang.AssertionError: expected [Your suggestions] but found [Specify your interest]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at tests.CreateATrip.CreateATripFlowDestination_3.tc04_SelectTripInterests(CreateATripFlowDestination_3.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>3</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf</td></tr>
+<tr>
+<td title='tests.Destinations.DestinationsSearchTests.tc03_DestinationsPageSearch_more_than_2_chars()'><b>tc03_DestinationsPageSearch_more_than_2_chars</b><br>Test class: tests.Destinations.DestinationsSearchTests<br>Test method: Check Destinations search DD list for contains required string (more than 2 chars).</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at tests.Destinations.DestinationsSearchTests.tc03_DestinationsPageSearch_more_than_2_chars(DestinationsSearchTests.java:34)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1961791319", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1961791319'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:976)
+	at org.testng.Assert.assertEquals(Assert.java:1010)
+	at tests.Destinations.DestinationsSearchTests.tc03_DestinationsPageSearch_more_than_2_chars(DestinationsSearchTests.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>1</td>
+<td>tests.Destinations.DestinationsSearchTests@5910de75</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.Destinations.DestinationsFailSearchTest.tc02_DestinationsSearchWrongData()'><b>tc02_DestinationsSearchWrongData</b><br>Test class: tests.Destinations.DestinationsFailSearchTest<br>Test method: Check search message display in case of wrong search data.<br>Parameters: {}[]\/"";.,</td>
+<td></td>
+<td>6</td>
+<td>tests.Destinations.DestinationsFailSearchTest@7d61eccf</td></tr>
+<tr>
+<td title='tests.Destinations.DestinationsElementsTest.tc01_DestinationsServices()'><b>tc01_DestinationsServices</b><br>Test class: tests.Destinations.DestinationsElementsTest<br>Test method: Check Destinations Services section Links.</td>
+<td></td>
+<td>27</td>
+<td>tests.Destinations.DestinationsElementsTest@127e70c5</td></tr>
+<tr>
+<td title='tests.Login.LoginFailTest.tc03_loginFail_Wrong_Password()'><b>tc03_loginFail_Wrong_Password</b><br>Test class: tests.Login.LoginFailTest<br>Test method: Check login failed with wrong password<br>Parameters: inko.loga123456@gmail.com, 00000</td>
+<td></td>
+<td>2</td>
+<td>tests.Login.LoginFailTest@5ef8df1e</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_3.tc01_CreateATripKnowDestination()'><b>tc01_CreateATripKnowDestination</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_3<br>Test method: Check Create a Trip title of step 2.</td>
+<td></td>
+<td>13</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_3.tc06_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected()'><b>tc06_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_3<br>Test method: Define ages and Finance standard and check selected data correct displayed in last step (suggestions).</td>
+<td></td>
+<td>15</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_3.tc08_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider_Interest()'><b>tc08_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider_Interest</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_3<br>Test method: Define ages, Finance in Slider, Change Interest and check selected data correct displayed in last step (suggestions).</td>
+<td></td>
+<td>13</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf</td></tr>
+<tr>
+<td title='tests.Destinations.DestinationsSearchTests.tc01_DestinationsPageTitle()'><b>tc01_DestinationsPageTitle</b><br>Test class: tests.Destinations.DestinationsSearchTests<br>Test method: Check Destinations page title.</td>
+<td></td>
+<td>0</td>
+<td>tests.Destinations.DestinationsSearchTests@5910de75</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_2.tc03_SelectDestinationDates()'><b>tc03_SelectDestinationDates</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_2<br>Test method: Check destination dates (in same month) selection and go to next step.</td>
+<td></td>
+<td>12</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_2@4108fa66</td></tr>
+<tr>
+<td title='tests.Destinations.DestinationsFailSearchTest.tc02_DestinationsSearchWrongData()'><b>tc02_DestinationsSearchWrongData</b><br>Test class: tests.Destinations.DestinationsFailSearchTest<br>Test method: Check search message display in case of wrong search data.<br>Parameters: #*#&#@</td>
+<td></td>
+<td>6</td>
+<td>tests.Destinations.DestinationsFailSearchTest@7d61eccf</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_2.tc04_CheckDestinationDataDisplay()'><b>tc04_CheckDestinationDataDisplay</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_2<br>Test method: Check selected destination data correct displayed in last step.</td>
+<td></td>
+<td>0</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_2@4108fa66</td></tr>
+<tr>
+<td title='tests.Destinations.DestinationsSearchTests.tc02_DestinationsPageSearch_2_chars()'><b>tc02_DestinationsPageSearch_2_chars</b><br>Test class: tests.Destinations.DestinationsSearchTests<br>Test method: Check Destinations search DD list for contains required string (2 chars).</td>
+<td></td>
+<td>1</td>
+<td>tests.Destinations.DestinationsSearchTests@5910de75</td></tr>
+<tr>
+<td title='tests.Login.LoginFailTest.tc03_loginFail_Wrong_Password()'><b>tc03_loginFail_Wrong_Password</b><br>Test class: tests.Login.LoginFailTest<br>Test method: Check login failed with wrong password<br>Parameters: inko.loga123456@gmail.com, sdfd</td>
+<td></td>
+<td>2</td>
+<td>tests.Login.LoginFailTest@5ef8df1e</td></tr>
+<tr>
+<td title='tests.Destinations.DestinationsSearchTests.tc05_DestinationsPageSearchSelectOneResult()'><b>tc05_DestinationsPageSearchSelectOneResult</b><br>Test class: tests.Destinations.DestinationsSearchTests<br>Test method: Check Destinations search - select one result.</td>
+<td></td>
+<td>8</td>
+<td>tests.Destinations.DestinationsSearchTests@5910de75</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_2.tc01_CreateATripKnowDestination()'><b>tc01_CreateATripKnowDestination</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_2<br>Test method: Check Create a Trip title of step 2.</td>
+<td></td>
+<td>4</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_2@4108fa66</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_2.tc02_SelectDestinationGoToNextStep()'><b>tc02_SelectDestinationGoToNextStep</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_2<br>Test method: Check select defined destination and go to next step.</td>
+<td></td>
+<td>5</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_2@4108fa66</td></tr>
+<tr>
+<td title='tests.Login.LoginFailTest.tc02_loginFail_Wrong_Email()'><b>tc02_loginFail_Wrong_Email</b><br>Test class: tests.Login.LoginFailTest<br>Test method: Check login failed with wrong email<br>Parameters: inko.loga123456gmail.com, Aa123445678, Please enter a valid email address</td>
+<td></td>
+<td>1</td>
+<td>tests.Login.LoginFailTest@5ef8df1e</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripTest.tc01_CreateATripPageTitle()'><b>tc01_CreateATripPageTitle</b><br>Test class: tests.CreateATrip.CreateATripTest<br>Test method: Check Create a Trip page title.</td>
+<td></td>
+<td>2</td>
+<td>tests.CreateATrip.CreateATripTest@7889a1ac</td></tr>
+<tr>
+<td title='tests.Login.LoginTest.tc01_validLogin()'><b>tc01_validLogin</b><br>Test class: tests.Login.LoginTest<br>Test method: Check login with valid user data.</td>
+<td></td>
+<td>8</td>
+<td>tests.Login.LoginTest@7e0aadd0</td></tr>
+<tr>
+<td title='tests.Destinations.DestinationsFailSearchTest.tc01_DestinationsSearchEmpty()'><b>tc01_DestinationsSearchEmpty</b><br>Test class: tests.Destinations.DestinationsFailSearchTest<br>Test method: Check error message display in case of search for less than 2 chars.<br>Parameters:  </td>
+<td></td>
+<td>3</td>
+<td>tests.Destinations.DestinationsFailSearchTest@7d61eccf</td></tr>
+<tr>
+<td title='tests.Destinations.DestinationsFailSearchTest.tc01_DestinationsSearchEmpty()'><b>tc01_DestinationsSearchEmpty</b><br>Test class: tests.Destinations.DestinationsFailSearchTest<br>Test method: Check error message display in case of search for less than 2 chars.<br>Parameters: h</td>
+<td></td>
+<td>3</td>
+<td>tests.Destinations.DestinationsFailSearchTest@7d61eccf</td></tr>
+<tr>
+<td title='tests.Login.LoginFailTest.tc02_loginFail_Wrong_Email()'><b>tc02_loginFail_Wrong_Email</b><br>Test class: tests.Login.LoginFailTest<br>Test method: Check login failed with wrong email<br>Parameters: inko.loga123456@gmail, Aa123445678, Please enter a valid email address</td>
+<td></td>
+<td>2</td>
+<td>tests.Login.LoginFailTest@5ef8df1e</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_3.tc03_SelectTripPurpose()'><b>tc03_SelectTripPurpose</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_3<br>Test method: Check next step page display and select trip purpose.</td>
+<td></td>
+<td>4</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf</td></tr>
+<tr>
+<td title='tests.Login.LoginFailTest.tc03_loginFail_Wrong_Password()'><b>tc03_loginFail_Wrong_Password</b><br>Test class: tests.Login.LoginFailTest<br>Test method: Check login failed with wrong password<br>Parameters: inko.loga123456@gmail.com, 1</td>
+<td></td>
+<td>2</td>
+<td>tests.Login.LoginFailTest@5ef8df1e</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateAtripFlowDestination_1.tc02_SelectDestinationGoToNextStep()'><b>tc02_SelectDestinationGoToNextStep</b><br>Test class: tests.CreateATrip.CreateAtripFlowDestination_1<br>Test method: Check select popular destination and go to next step.</td>
+<td></td>
+<td>2</td>
+<td>tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976</td></tr>
+<tr>
+<td title='tests.Login.LoginFailTest.tc03_loginFail_Wrong_Password()'><b>tc03_loginFail_Wrong_Password</b><br>Test class: tests.Login.LoginFailTest<br>Test method: Check login failed with wrong password<br>Parameters: inko.loga123456@gmail.com, Aa12344</td>
+<td></td>
+<td>3</td>
+<td>tests.Login.LoginFailTest@5ef8df1e</td></tr>
+<tr>
+<td title='tests.Login.LoginFailTest.tc02_loginFail_Wrong_Email()'><b>tc02_loginFail_Wrong_Email</b><br>Test class: tests.Login.LoginFailTest<br>Test method: Check login failed with wrong email<br>Parameters: inko.loga123456@gmail#com, Aa123445678, Please enter a valid email address</td>
+<td></td>
+<td>1</td>
+<td>tests.Login.LoginFailTest@5ef8df1e</td></tr>
+<tr>
+<td title='tests.Login.LogOutTest.tc01_logOut()'><b>tc01_logOut</b><br>Test class: tests.Login.LogOutTest</td>
+<td></td>
+<td>11</td>
+<td>tests.Login.LogOutTest@2cd2c8fe</td></tr>
+<tr>
+<td title='tests.HeaderTest.tc01_linksHeaderMenuInnerLinks()'><b>tc01_linksHeaderMenuInnerLinks</b><br>Test class: tests.HeaderTest<br>Test method: Check Header Menu Inner Links.</td>
+<td></td>
+<td>8</td>
+<td>tests.HeaderTest@27cf3151</td></tr>
+<tr>
+<td title='tests.Destinations.DestinationsFailSearchTest.tc02_DestinationsSearchWrongData()'><b>tc02_DestinationsSearchWrongData</b><br>Test class: tests.Destinations.DestinationsFailSearchTest<br>Test method: Check search message display in case of wrong search data.<br>Parameters: lkjls sdflsdjf sskdfslf sfjsl dfsfjewrowier sdkfjsdfj sljf lseirsfsdf sfskdf skdfwe rw erekfjhds</td>
+<td></td>
+<td>6</td>
+<td>tests.Destinations.DestinationsFailSearchTest@7d61eccf</td></tr>
+<tr>
+<td title='tests.Login.LoginFailTest.tc02_loginFail_Wrong_Email()'><b>tc02_loginFail_Wrong_Email</b><br>Test class: tests.Login.LoginFailTest<br>Test method: Check login failed with wrong email<br>Parameters: , 123445678, Required</td>
+<td></td>
+<td>1</td>
+<td>tests.Login.LoginFailTest@5ef8df1e</td></tr>
+<tr>
+<td title='tests.Login.LoginFailTest.tc01_loginFail_not_existsUser()'><b>tc01_loginFail_not_existsUser</b><br>Test class: tests.Login.LoginFailTest<br>Test method: Check login failed with not exists user</td>
+<td></td>
+<td>8</td>
+<td>tests.Login.LoginFailTest@5ef8df1e</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_3.tc07_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider()'><b>tc07_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_3<br>Test method: Define ages and Finance in Slider and check selected data correct displayed in last step (suggestions).</td>
+<td></td>
+<td>7</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf</td></tr>
+<tr>
+<td title='tests.Destinations.DestinationsSearchTests.tc04_DestinationsPageSearchResult()'><b>tc04_DestinationsPageSearchResult</b><br>Test class: tests.Destinations.DestinationsSearchTests<br>Test method: Check Destinations search - find requested string</td>
+<td></td>
+<td>1</td>
+<td>tests.Destinations.DestinationsSearchTests@5910de75</td></tr>
+<tr>
+<td title='tests.Login.LoginWindowLinks.tc02_forgotPasswordPage_Display()'><b>tc02_forgotPasswordPage_Display</b><br>Test class: tests.Login.LoginWindowLinks<br>Test method: Check for Forgot Password page display by click on Forgot Password link.</td>
+<td></td>
+<td>3</td>
+<td>tests.Login.LoginWindowLinks@55e7a35c</td></tr>
+<tr>
+<td title='tests.Login.LoginWindowLinks.tc01_signUpForm_Display()'><b>tc01_signUpForm_Display</b><br>Test class: tests.Login.LoginWindowLinks<br>Test method: Check for Sign Up form display by click on signUp link.</td>
+<td></td>
+<td>3</td>
+<td>tests.Login.LoginWindowLinks@55e7a35c</td></tr>
+<tr>
+<td title='tests.Login.LoginFailTest.tc02_loginFail_Wrong_Email()'><b>tc02_loginFail_Wrong_Email</b><br>Test class: tests.Login.LoginFailTest<br>Test method: Check login failed with wrong email<br>Parameters: inko.loga123456@@gmail.com, Aa123445678, Please enter a valid email address</td>
+<td></td>
+<td>2</td>
+<td>tests.Login.LoginFailTest@5ef8df1e</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_3.tc02_SelectDestinationDates()'><b>tc02_SelectDestinationDates</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_3<br>Test method: Select trip dates (in different month) selection and go to next step.</td>
+<td></td>
+<td>6</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf</td></tr>
+<tr>
+<td title='tests.Destinations.DestinationsFailSearchTest.tc02_DestinationsSearchWrongData()'><b>tc02_DestinationsSearchWrongData</b><br>Test class: tests.Destinations.DestinationsFailSearchTest<br>Test method: Check search message display in case of wrong search data.<br>Parameters: dfgdfgdg</td>
+<td></td>
+<td>6</td>
+<td>tests.Destinations.DestinationsFailSearchTest@7d61eccf</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateAtripFlowDestination_1.tc01_CreateATripKnowDestination()'><b>tc01_CreateATripKnowDestination</b><br>Test class: tests.CreateATrip.CreateAtripFlowDestination_1<br>Test method: Check Create a Trip title of step 2.</td>
+<td></td>
+<td>3</td>
+<td>tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateAtripFlowDestination_1.tc03_SelectDestinationGoToNextStepDates()'><b>tc03_SelectDestinationGoToNextStepDates</b><br>Test class: tests.CreateATrip.CreateAtripFlowDestination_1<br>Test method: Check flexible dates for trip and go to next step.</td>
+<td></td>
+<td>2</td>
+<td>tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976</td></tr>
+<tr>
+<td title='tests.Login.LoginFailTest.tc05_loginFail_empty_Password_field()'><b>tc05_loginFail_empty_Password_field</b><br>Test class: tests.Login.LoginFailTest<br>Test method: Check login failed with empty Password field</td>
+<td></td>
+<td>1</td>
+<td>tests.Login.LoginFailTest@5ef8df1e</td></tr>
+<tr>
+<td title='tests.HeaderTest.tc02_linksHeaderMenuOuterLinks()'><b>tc02_linksHeaderMenuOuterLinks</b><br>Test class: tests.HeaderTest<br>Test method: Check Header Menu Outer Links.</td>
+<td></td>
+<td>43</td>
+<td>tests.HeaderTest@27cf3151</td></tr>
+<tr>
+<td title='tests.CreateATrip.CreateATripFlowDestination_2.tc06_DeleteTripAfterSave()'><b>tc06_DeleteTripAfterSave</b><br>Test class: tests.CreateATrip.CreateATripFlowDestination_2<br>Test method: Delete saved trip from Bookmarks page and check if deleted.</td>
+<td></td>
+<td>0</td>
+<td>tests.CreateATrip.CreateATripFlowDestination_2@4108fa66</td></tr>
+</table><p>
+</body>
+</html>

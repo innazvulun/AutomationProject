@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" ignored="11" total="59" passed="43">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="832403" started-at="2023-04-22T16:15:47 IDT" finished-at="2023-04-22T16:29:39 IDT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="832403" started-at="2023-04-22T16:15:47 IDT" finished-at="2023-04-22T16:29:39 IDT">
+      <class name="tests.Login.LogOutTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Login.LogOutTest@2cd2c8fe]" name="setup" is-config="true" duration-ms="21243" started-at="2023-04-22T16:28:13 IDT" finished-at="2023-04-22T16:28:35 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_logOut()[pri:0, instance:tests.Login.LogOutTest@2cd2c8fe]" name="tc01_logOut" duration-ms="11009" started-at="2023-04-22T16:28:35 IDT" finished-at="2023-04-22T16:28:46 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_logOut -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LogOutTest@2cd2c8fe]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:28:46 IDT" finished-at="2023-04-22T16:28:46 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_logOut status=SUCCESS method=LogOutTest.tc01_logOut()[pri:0, instance:tests.Login.LogOutTest@2cd2c8fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.Login.LogOutTest@2cd2c8fe]" name="treatDown" is-config="true" duration-ms="683" started-at="2023-04-22T16:28:46 IDT" finished-at="2023-04-22T16:28:46 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.Login.LogOutTest -->
+      <class name="tests.Destinations.DestinationsElementsTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Destinations.DestinationsElementsTest@127e70c5]" name="setup" is-config="true" duration-ms="16048" started-at="2023-04-22T16:19:24 IDT" finished-at="2023-04-22T16:19:40 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_DestinationsServices()[pri:0, instance:tests.Destinations.DestinationsElementsTest@127e70c5]" name="tc01_DestinationsServices" duration-ms="27669" started-at="2023-04-22T16:19:40 IDT" description="Check Destinations Services section Links." finished-at="2023-04-22T16:20:08 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_DestinationsServices -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsElementsTest@127e70c5]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:20:08 IDT" finished-at="2023-04-22T16:20:08 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_DestinationsServices status=SUCCESS method=DestinationsElementsTest.tc01_DestinationsServices()[pri:0, instance:tests.Destinations.DestinationsElementsTest@127e70c5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="FAIL" signature="tc02_DestinationsPopular()[pri:0, instance:tests.Destinations.DestinationsElementsTest@127e70c5]" name="tc02_DestinationsPopular" duration-ms="256346" started-at="2023-04-22T16:20:08 IDT" description="Check Popular Destinations items Links." finished-at="2023-04-22T16:24:24 IDT">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 16, Size: 16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 16, Size: 16
+at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+at java.util.ArrayList.get(ArrayList.java:433)
+at pageObjects.DestinationsPage.checkPopularDestinationsItems(DestinationsPage.java:160)
+at tests.Destinations.DestinationsElementsTest.tc02_DestinationsPopular(DestinationsElementsTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_DestinationsPopular -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsElementsTest@127e70c5]" name="failedTest" is-config="true" duration-ms="452" started-at="2023-04-22T16:24:24 IDT" finished-at="2023-04-22T16:24:25 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_DestinationsPopular status=FAILURE method=DestinationsElementsTest.tc02_DestinationsPopular()[pri:0, instance:tests.Destinations.DestinationsElementsTest@127e70c5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.Destinations.DestinationsElementsTest@127e70c5]" name="treatDown" is-config="true" duration-ms="782" started-at="2023-04-22T16:24:25 IDT" finished-at="2023-04-22T16:24:25 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.Destinations.DestinationsElementsTest -->
+      <class name="tests.CreateATrip.CreateAtripFlowDestination_1">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976]" name="setup" is-config="true" duration-ms="20880" started-at="2023-04-22T16:16:50 IDT" finished-at="2023-04-22T16:17:11 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_CreateATripKnowDestination()[pri:0, instance:tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976]" name="tc01_CreateATripKnowDestination" duration-ms="3389" started-at="2023-04-22T16:17:11 IDT" description="Check Create a Trip title of step 2." finished-at="2023-04-22T16:17:14 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_CreateATripKnowDestination -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:17:14 IDT" finished-at="2023-04-22T16:17:14 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_CreateATripKnowDestination status=SUCCESS method=CreateAtripFlowDestination_1.tc01_CreateATripKnowDestination()[pri:0, instance:tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_SelectDestinationGoToNextStep()[pri:0, instance:tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976]" name="tc02_SelectDestinationGoToNextStep" duration-ms="2747" started-at="2023-04-22T16:17:14 IDT" description="Check select popular destination and go to next step." finished-at="2023-04-22T16:17:17 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_SelectDestinationGoToNextStep -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:17:17 IDT" finished-at="2023-04-22T16:17:17 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_SelectDestinationGoToNextStep status=SUCCESS method=CreateAtripFlowDestination_1.tc02_SelectDestinationGoToNextStep()[pri:0, instance:tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc03_SelectDestinationGoToNextStepDates()[pri:0, instance:tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976]" name="tc03_SelectDestinationGoToNextStepDates" duration-ms="2904" started-at="2023-04-22T16:17:17 IDT" description="Check flexible dates for trip and go to next step." finished-at="2023-04-22T16:17:20 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_SelectDestinationGoToNextStepDates -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:17:20 IDT" finished-at="2023-04-22T16:17:20 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_SelectDestinationGoToNextStepDates status=SUCCESS method=CreateAtripFlowDestination_1.tc03_SelectDestinationGoToNextStepDates()[pri:0, instance:tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.CreateATrip.CreateAtripFlowDestination_1@3aee3976]" name="treatDown" is-config="true" duration-ms="760" started-at="2023-04-22T16:17:20 IDT" finished-at="2023-04-22T16:17:21 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.CreateATrip.CreateAtripFlowDestination_1 -->
+      <class name="tests.HeaderTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.HeaderTest@27cf3151]" name="setup" is-config="true" duration-ms="19341" started-at="2023-04-22T16:18:12 IDT" finished-at="2023-04-22T16:18:31 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_linksHeaderMenuInnerLinks()[pri:0, instance:tests.HeaderTest@27cf3151]" name="tc01_linksHeaderMenuInnerLinks" duration-ms="8173" started-at="2023-04-22T16:18:31 IDT" description="Check Header Menu Inner Links." finished-at="2023-04-22T16:18:39 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_linksHeaderMenuInnerLinks -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.HeaderTest@27cf3151]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:18:39 IDT" finished-at="2023-04-22T16:18:39 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_linksHeaderMenuInnerLinks status=SUCCESS method=HeaderTest.tc01_linksHeaderMenuInnerLinks()[pri:0, instance:tests.HeaderTest@27cf3151] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_linksHeaderMenuOuterLinks()[pri:0, instance:tests.HeaderTest@27cf3151]" name="tc02_linksHeaderMenuOuterLinks" duration-ms="43791" started-at="2023-04-22T16:18:39 IDT" description="Check Header Menu Outer Links." finished-at="2023-04-22T16:19:23 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_linksHeaderMenuOuterLinks -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.HeaderTest@27cf3151]" name="failedTest" is-config="true" duration-ms="2" started-at="2023-04-22T16:19:23 IDT" finished-at="2023-04-22T16:19:23 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_linksHeaderMenuOuterLinks status=SUCCESS method=HeaderTest.tc02_linksHeaderMenuOuterLinks()[pri:0, instance:tests.HeaderTest@27cf3151] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.HeaderTest@27cf3151]" name="treatDown" is-config="true" duration-ms="836" started-at="2023-04-22T16:19:23 IDT" finished-at="2023-04-22T16:19:24 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.HeaderTest -->
+      <class name="tests.CreateATrip.CreateATripTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CreateATrip.CreateATripTest@7889a1ac]" name="setup" is-config="true" duration-ms="22461" started-at="2023-04-22T16:16:24 IDT" finished-at="2023-04-22T16:16:47 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_CreateATripPageTitle()[pri:0, instance:tests.CreateATrip.CreateATripTest@7889a1ac]" name="tc01_CreateATripPageTitle" duration-ms="2751" started-at="2023-04-22T16:16:47 IDT" description="Check Create a Trip page title." finished-at="2023-04-22T16:16:49 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_CreateATripPageTitle -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripTest@7889a1ac]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:16:49 IDT" finished-at="2023-04-22T16:16:49 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_CreateATripPageTitle status=SUCCESS method=CreateATripTest.tc01_CreateATripPageTitle()[pri:0, instance:tests.CreateATrip.CreateATripTest@7889a1ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.CreateATrip.CreateATripTest@7889a1ac]" name="treatDown" is-config="true" duration-ms="747" started-at="2023-04-22T16:16:49 IDT" finished-at="2023-04-22T16:16:50 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.CreateATrip.CreateATripTest -->
+      <class name="tests.Login.LoginWindowLinks">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:tests.Login.LoginWindowLinks@55e7a35c]" name="initialization" is-config="true" duration-ms="64" started-at="2023-04-22T16:15:47 IDT" finished-at="2023-04-22T16:15:47 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Login.LoginWindowLinks@55e7a35c]" name="setup" is-config="true" duration-ms="29287" started-at="2023-04-22T16:15:47 IDT" finished-at="2023-04-22T16:16:16 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_signUpForm_Display()[pri:0, instance:tests.Login.LoginWindowLinks@55e7a35c]" name="tc01_signUpForm_Display" duration-ms="3139" started-at="2023-04-22T16:16:16 IDT" description="Check for Sign Up form display by click on signUp link." finished-at="2023-04-22T16:16:20 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_signUpForm_Display -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginWindowLinks@55e7a35c]" name="failedTest" is-config="true" duration-ms="6" started-at="2023-04-22T16:16:20 IDT" finished-at="2023-04-22T16:16:20 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_signUpForm_Display status=SUCCESS method=LoginWindowLinks.tc01_signUpForm_Display()[pri:0, instance:tests.Login.LoginWindowLinks@55e7a35c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_forgotPasswordPage_Display()[pri:0, instance:tests.Login.LoginWindowLinks@55e7a35c]" name="tc02_forgotPasswordPage_Display" duration-ms="3380" started-at="2023-04-22T16:16:20 IDT" description="Check for Forgot Password page display by click on Forgot Password link." finished-at="2023-04-22T16:16:23 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_forgotPasswordPage_Display -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginWindowLinks@55e7a35c]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:16:23 IDT" finished-at="2023-04-22T16:16:23 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_forgotPasswordPage_Display status=SUCCESS method=LoginWindowLinks.tc02_forgotPasswordPage_Display()[pri:0, instance:tests.Login.LoginWindowLinks@55e7a35c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.Login.LoginWindowLinks@55e7a35c]" name="treatDown" is-config="true" duration-ms="723" started-at="2023-04-22T16:16:23 IDT" finished-at="2023-04-22T16:16:24 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.Login.LoginWindowLinks -->
+      <class name="tests.CreateATrip.CreateATripFlowDestination_2">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="setup" is-config="true" duration-ms="29061" started-at="2023-04-22T16:24:57 IDT" finished-at="2023-04-22T16:25:26 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_CreateATripKnowDestination()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="tc01_CreateATripKnowDestination" duration-ms="4361" started-at="2023-04-22T16:25:26 IDT" description="Check Create a Trip title of step 2." finished-at="2023-04-22T16:25:31 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_CreateATripKnowDestination -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:25:31 IDT" finished-at="2023-04-22T16:25:31 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_CreateATripKnowDestination status=SUCCESS method=CreateATripFlowDestination_2.tc01_CreateATripKnowDestination()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_SelectDestinationGoToNextStep()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="tc02_SelectDestinationGoToNextStep" duration-ms="5118" started-at="2023-04-22T16:25:31 IDT" description="Check select defined destination and go to next step." finished-at="2023-04-22T16:25:36 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_SelectDestinationGoToNextStep -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:25:36 IDT" finished-at="2023-04-22T16:25:36 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_SelectDestinationGoToNextStep status=SUCCESS method=CreateATripFlowDestination_2.tc02_SelectDestinationGoToNextStep()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc03_SelectDestinationDates()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="tc03_SelectDestinationDates" duration-ms="12920" started-at="2023-04-22T16:25:36 IDT" description="Check destination dates (in same month) selection and go to next step." finished-at="2023-04-22T16:25:49 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_SelectDestinationDates -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:25:49 IDT" finished-at="2023-04-22T16:25:49 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_SelectDestinationDates status=SUCCESS method=CreateATripFlowDestination_2.tc03_SelectDestinationDates()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc04_CheckDestinationDataDisplay()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="tc04_CheckDestinationDataDisplay" duration-ms="276" started-at="2023-04-22T16:25:49 IDT" description="Check selected destination data correct displayed in last step." finished-at="2023-04-22T16:25:49 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_CheckDestinationDataDisplay -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:25:49 IDT" finished-at="2023-04-22T16:25:49 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc04_CheckDestinationDataDisplay status=SUCCESS method=CreateATripFlowDestination_2.tc04_CheckDestinationDataDisplay()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="FAIL" signature="tc05_SaveTripWithLogin()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="tc05_SaveTripWithLogin" duration-ms="17595" started-at="2023-04-22T16:25:49 IDT" description="Save trip and check if save correctly, incluse login action before." finished-at="2023-04-22T16:26:07 IDT">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [668f29347017e011900cfda521489b01, getElementAttribute {id=ce3ef3c1-2b8d-4cba-81bf-986cf27b5051, name=style}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Inna\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61246}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61246/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (668f29347017e011900cfda521489b01)] -> css selector: .app-header__desktop  a[target='_self']]
+Session ID: 668f29347017e011900cfda521489b01]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [668f29347017e011900cfda521489b01, getElementAttribute {id=ce3ef3c1-2b8d-4cba-81bf-986cf27b5051, name=style}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Inna\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61246}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61246/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (668f29347017e011900cfda521489b01)] -> css selector: .app-header__desktop  a[target='_self']]
+Session ID: 668f29347017e011900cfda521489b01
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:158)
+at pageObjects.BasePage.highlightElement(BasePage.java:115)
+at pageObjects.BasePage.click(BasePage.java:43)
+at pageObjects.HeaderSection.goToMyTripsPage(HeaderSection.java:84)
+at tests.CreateATrip.CreateATripFlowDestination_2.tc05_SaveTripWithLogin(CreateATripFlowDestination_2.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc05_SaveTripWithLogin -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="failedTest" is-config="true" duration-ms="390" started-at="2023-04-22T16:26:07 IDT" finished-at="2023-04-22T16:26:07 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc05_SaveTripWithLogin status=FAILURE method=CreateATripFlowDestination_2.tc05_SaveTripWithLogin()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc06_DeleteTripAfterSave()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="tc06_DeleteTripAfterSave" duration-ms="30" started-at="2023-04-22T16:26:07 IDT" description="Delete saved trip from Bookmarks page and check if deleted." finished-at="2023-04-22T16:26:07 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc06_DeleteTripAfterSave -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:26:07 IDT" finished-at="2023-04-22T16:26:07 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc06_DeleteTripAfterSave status=SUCCESS method=CreateATripFlowDestination_2.tc06_DeleteTripAfterSave()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_2@4108fa66]" name="treatDown" is-config="true" duration-ms="883" started-at="2023-04-22T16:26:07 IDT" finished-at="2023-04-22T16:26:08 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.CreateATrip.CreateATripFlowDestination_2 -->
+      <class name="tests.CreateATrip.CreateATripFlowDestination_3">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="setup" is-config="true" duration-ms="20621" started-at="2023-04-22T16:26:08 IDT" finished-at="2023-04-22T16:26:29 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_CreateATripKnowDestination()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="tc01_CreateATripKnowDestination" duration-ms="13034" started-at="2023-04-22T16:26:29 IDT" description="Check Create a Trip title of step 2." finished-at="2023-04-22T16:26:42 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_CreateATripKnowDestination -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:26:42 IDT" finished-at="2023-04-22T16:26:42 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_CreateATripKnowDestination status=SUCCESS method=CreateATripFlowDestination_3.tc01_CreateATripKnowDestination()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_SelectDestinationDates()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="tc02_SelectDestinationDates" duration-ms="6789" started-at="2023-04-22T16:26:42 IDT" description="Select trip dates (in different month) selection and go to next step." finished-at="2023-04-22T16:26:48 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_SelectDestinationDates -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:26:48 IDT" finished-at="2023-04-22T16:26:48 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_SelectDestinationDates status=SUCCESS method=CreateATripFlowDestination_3.tc02_SelectDestinationDates()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc03_SelectTripPurpose()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="tc03_SelectTripPurpose" duration-ms="4053" started-at="2023-04-22T16:26:48 IDT" description="Check next step page display and select trip purpose." finished-at="2023-04-22T16:26:52 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_SelectTripPurpose -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:26:52 IDT" finished-at="2023-04-22T16:26:52 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_SelectTripPurpose status=SUCCESS method=CreateATripFlowDestination_3.tc03_SelectTripPurpose()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="FAIL" signature="tc04_SelectTripInterests()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="tc04_SelectTripInterests" duration-ms="3454" started-at="2023-04-22T16:26:52 IDT" description="Check next step page display and select trip Interests." finished-at="2023-04-22T16:26:56 IDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Your suggestions] but found [Specify your interest]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Your suggestions] but found [Specify your interest]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at tests.CreateATrip.CreateATripFlowDestination_3.tc04_SelectTripInterests(CreateATripFlowDestination_3.java:66)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_SelectTripInterests -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="failedTest" is-config="true" duration-ms="176" started-at="2023-04-22T16:26:56 IDT" finished-at="2023-04-22T16:26:56 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc04_SelectTripInterests status=FAILURE method=CreateATripFlowDestination_3.tc04_SelectTripInterests()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="FAIL" signature="tc05_SuggestionsAccordingToSelections_AgesSelected()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="tc05_SuggestionsAccordingToSelections_AgesSelected" duration-ms="4553" started-at="2023-04-22T16:26:56 IDT" description="Define ages and check selected data correct displayed in last step (suggestions)." finished-at="2023-04-22T16:27:01 IDT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".sb-desktop__bar-items > div:nth-child(3) > button"}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c1b5213ddeade1182ccb521f921f0bfb, findElement {using=css selector, value=.sb-desktop__bar-items > div:nth-child(3) > button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Inna\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61511/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c1b5213ddeade1182ccb521f921f0bfb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".sb-desktop__bar-items > div:nth-child(3) > button"}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c1b5213ddeade1182ccb521f921f0bfb, findElement {using=css selector, value=.sb-desktop__bar-items > div:nth-child(3) > button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Inna\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61511/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c1b5213ddeade1182ccb521f921f0bfb
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy17.getAttribute(Unknown Source)
+at pageObjects.BasePage.highlightElement(BasePage.java:115)
+at pageObjects.BasePage.click(BasePage.java:43)
+at pageObjects.SuggestionsPage.tripComposition(SuggestionsPage.java:64)
+at tests.CreateATrip.CreateATripFlowDestination_3.tc05_SuggestionsAccordingToSelections_AgesSelected(CreateATripFlowDestination_3.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc05_SuggestionsAccordingToSelections_AgesSelected -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="failedTest" is-config="true" duration-ms="251" started-at="2023-04-22T16:27:01 IDT" finished-at="2023-04-22T16:27:01 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc05_SuggestionsAccordingToSelections_AgesSelected status=FAILURE method=CreateATripFlowDestination_3.tc05_SuggestionsAccordingToSelections_AgesSelected()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc06_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="tc06_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected" duration-ms="15574" started-at="2023-04-22T16:27:01 IDT" description="Define ages and Finance standard and check selected data correct displayed in last step (suggestions)." finished-at="2023-04-22T16:27:16 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc06_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="failedTest" is-config="true" duration-ms="2" started-at="2023-04-22T16:27:16 IDT" finished-at="2023-04-22T16:27:16 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc06_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected status=SUCCESS method=CreateATripFlowDestination_3.tc06_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc07_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="tc07_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider" duration-ms="7477" started-at="2023-04-22T16:27:16 IDT" description="Define ages and Finance in Slider and check selected data correct displayed in last step (suggestions)." finished-at="2023-04-22T16:27:24 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc07_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:27:24 IDT" finished-at="2023-04-22T16:27:24 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc07_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider status=SUCCESS method=CreateATripFlowDestination_3.tc07_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc08_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider_Interest()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="tc08_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider_Interest" duration-ms="13892" started-at="2023-04-22T16:27:24 IDT" description="Define ages, Finance in Slider, Change Interest and check selected data correct displayed in last step (suggestions)." finished-at="2023-04-22T16:27:38 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc08_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider_Interest -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:27:38 IDT" finished-at="2023-04-22T16:27:38 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc08_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider_Interest status=SUCCESS method=CreateATripFlowDestination_3.tc08_SuggestionsAccordingToSelections_AgesSelected_FinanceSelected_Slider_Interest()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.CreateATrip.CreateATripFlowDestination_3@1f130eaf]" name="treatDown" is-config="true" duration-ms="712" started-at="2023-04-22T16:27:38 IDT" finished-at="2023-04-22T16:27:39 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.CreateATrip.CreateATripFlowDestination_3 -->
+      <class name="tests.Destinations.DestinationsSearchTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="setup" is-config="true" duration-ms="16079" started-at="2023-04-22T16:24:25 IDT" finished-at="2023-04-22T16:24:41 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_DestinationsPageTitle()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="tc01_DestinationsPageTitle" duration-ms="833" started-at="2023-04-22T16:24:41 IDT" description="Check Destinations page title." finished-at="2023-04-22T16:24:42 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_DestinationsPageTitle -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:24:42 IDT" finished-at="2023-04-22T16:24:42 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_DestinationsPageTitle status=SUCCESS method=DestinationsSearchTests.tc01_DestinationsPageTitle()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_DestinationsPageSearch_2_chars()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="tc02_DestinationsPageSearch_2_chars" duration-ms="1917" started-at="2023-04-22T16:24:42 IDT" description="Check Destinations search DD list for contains required string (2 chars)." finished-at="2023-04-22T16:24:44 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_DestinationsPageSearch_2_chars -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:24:44 IDT" finished-at="2023-04-22T16:24:44 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_DestinationsPageSearch_2_chars status=SUCCESS method=DestinationsSearchTests.tc02_DestinationsPageSearch_2_chars()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="FAIL" signature="tc03_DestinationsPageSearch_more_than_2_chars()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="tc03_DestinationsPageSearch_more_than_2_chars" duration-ms="1819" started-at="2023-04-22T16:24:44 IDT" description="Check Destinations search DD list for contains required string (more than 2 chars)." finished-at="2023-04-22T16:24:46 IDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:976)
+at org.testng.Assert.assertEquals(Assert.java:1010)
+at tests.Destinations.DestinationsSearchTests.tc03_DestinationsPageSearch_more_than_2_chars(DestinationsSearchTests.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_DestinationsPageSearch_more_than_2_chars -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="failedTest" is-config="true" duration-ms="234" started-at="2023-04-22T16:24:46 IDT" finished-at="2023-04-22T16:24:46 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_DestinationsPageSearch_more_than_2_chars status=FAILURE method=DestinationsSearchTests.tc03_DestinationsPageSearch_more_than_2_chars()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc04_DestinationsPageSearchResult()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="tc04_DestinationsPageSearchResult" duration-ms="1861" started-at="2023-04-22T16:24:46 IDT" description="Check Destinations search - find requested string" finished-at="2023-04-22T16:24:48 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_DestinationsPageSearchResult -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:24:48 IDT" finished-at="2023-04-22T16:24:48 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc04_DestinationsPageSearchResult status=SUCCESS method=DestinationsSearchTests.tc04_DestinationsPageSearchResult()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc05_DestinationsPageSearchSelectOneResult()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="tc05_DestinationsPageSearchSelectOneResult" duration-ms="8502" started-at="2023-04-22T16:24:48 IDT" description="Check Destinations search - select one result." finished-at="2023-04-22T16:24:57 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc05_DestinationsPageSearchSelectOneResult -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:24:57 IDT" finished-at="2023-04-22T16:24:57 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc05_DestinationsPageSearchSelectOneResult status=SUCCESS method=DestinationsSearchTests.tc05_DestinationsPageSearchSelectOneResult()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.Destinations.DestinationsSearchTests@5910de75]" name="treatDown" is-config="true" duration-ms="671" started-at="2023-04-22T16:24:57 IDT" finished-at="2023-04-22T16:24:57 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.Destinations.DestinationsSearchTests -->
+      <class name="tests.Login.LoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Login.LoginTest@7e0aadd0]" name="setup" is-config="true" duration-ms="25156" started-at="2023-04-22T16:27:39 IDT" finished-at="2023-04-22T16:28:04 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_validLogin()[pri:0, instance:tests.Login.LoginTest@7e0aadd0]" name="tc01_validLogin" duration-ms="8950" started-at="2023-04-22T16:28:04 IDT" description="Check login with valid user data." finished-at="2023-04-22T16:28:13 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_validLogin -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginTest@7e0aadd0]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:28:13 IDT" finished-at="2023-04-22T16:28:13 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_validLogin status=SUCCESS method=LoginTest.tc01_validLogin()[pri:0, instance:tests.Login.LoginTest@7e0aadd0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.Login.LoginTest@7e0aadd0]" name="treatDown" is-config="true" duration-ms="670" started-at="2023-04-22T16:28:13 IDT" finished-at="2023-04-22T16:28:13 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.Login.LoginTest -->
+      <class name="tests.Login.LoginFailTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="setup" is-config="true" duration-ms="19080" started-at="2023-04-22T16:17:21 IDT" finished-at="2023-04-22T16:17:40 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_loginFail_not_existsUser()[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="tc01_loginFail_not_existsUser" duration-ms="8722" started-at="2023-04-22T16:17:40 IDT" description="Check login failed with not exists user" finished-at="2023-04-22T16:17:49 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_loginFail_not_existsUser -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:17:49 IDT" finished-at="2023-04-22T16:17:49 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_loginFail_not_existsUser status=SUCCESS method=LoginFailTest.tc01_loginFail_not_existsUser()[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_loginFail_Wrong_Email(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="tc02_loginFail_Wrong_Email" duration-ms="1930" started-at="2023-04-22T16:17:49 IDT" description="Check login failed with wrong email" data-provider="getDataEmail" finished-at="2023-04-22T16:17:51 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[inko.loga123456gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aa123445678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please enter a valid email address]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_loginFail_Wrong_Email -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:17:51 IDT" finished-at="2023-04-22T16:17:51 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_loginFail_Wrong_Email status=SUCCESS method=LoginFailTest.tc02_loginFail_Wrong_Email(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_loginFail_Wrong_Email(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="tc02_loginFail_Wrong_Email" duration-ms="2108" started-at="2023-04-22T16:17:51 IDT" description="Check login failed with wrong email" data-provider="getDataEmail" finished-at="2023-04-22T16:17:53 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[inko.loga123456@@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aa123445678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please enter a valid email address]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_loginFail_Wrong_Email -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:17:53 IDT" finished-at="2023-04-22T16:17:53 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_loginFail_Wrong_Email status=SUCCESS method=LoginFailTest.tc02_loginFail_Wrong_Email(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_loginFail_Wrong_Email(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="tc02_loginFail_Wrong_Email" duration-ms="2044" started-at="2023-04-22T16:17:53 IDT" description="Check login failed with wrong email" data-provider="getDataEmail" finished-at="2023-04-22T16:17:55 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[inko.loga123456@gmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aa123445678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please enter a valid email address]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_loginFail_Wrong_Email -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:17:55 IDT" finished-at="2023-04-22T16:17:55 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_loginFail_Wrong_Email status=SUCCESS method=LoginFailTest.tc02_loginFail_Wrong_Email(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_loginFail_Wrong_Email(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="tc02_loginFail_Wrong_Email" duration-ms="1984" started-at="2023-04-22T16:17:55 IDT" description="Check login failed with wrong email" data-provider="getDataEmail" finished-at="2023-04-22T16:17:57 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[inko.loga123456@gmail#com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aa123445678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please enter a valid email address]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_loginFail_Wrong_Email -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:17:57 IDT" finished-at="2023-04-22T16:17:57 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_loginFail_Wrong_Email status=SUCCESS method=LoginFailTest.tc02_loginFail_Wrong_Email(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_loginFail_Wrong_Email(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="tc02_loginFail_Wrong_Email" duration-ms="1680" started-at="2023-04-22T16:17:57 IDT" description="Check login failed with wrong email" data-provider="getDataEmail" finished-at="2023-04-22T16:17:58 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123445678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_loginFail_Wrong_Email -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:17:58 IDT" finished-at="2023-04-22T16:17:58 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_loginFail_Wrong_Email status=SUCCESS method=LoginFailTest.tc02_loginFail_Wrong_Email(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc03_loginFail_Wrong_Password(java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="tc03_loginFail_Wrong_Password" duration-ms="3216" started-at="2023-04-22T16:17:58 IDT" description="Check login failed with wrong password" data-provider="getDataPassword" finished-at="2023-04-22T16:18:02 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[inko.loga123456@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aa12344]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_loginFail_Wrong_Password -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:18:02 IDT" finished-at="2023-04-22T16:18:02 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_loginFail_Wrong_Password status=SUCCESS method=LoginFailTest.tc03_loginFail_Wrong_Password(java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc03_loginFail_Wrong_Password(java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="tc03_loginFail_Wrong_Password" duration-ms="2773" started-at="2023-04-22T16:18:02 IDT" description="Check login failed with wrong password" data-provider="getDataPassword" finished-at="2023-04-22T16:18:04 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[inko.loga123456@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_loginFail_Wrong_Password -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:18:04 IDT" finished-at="2023-04-22T16:18:04 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_loginFail_Wrong_Password status=SUCCESS method=LoginFailTest.tc03_loginFail_Wrong_Password(java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc03_loginFail_Wrong_Password(java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="tc03_loginFail_Wrong_Password" duration-ms="2462" started-at="2023-04-22T16:18:04 IDT" description="Check login failed with wrong password" data-provider="getDataPassword" finished-at="2023-04-22T16:18:07 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[inko.loga123456@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[00000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_loginFail_Wrong_Password -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:18:07 IDT" finished-at="2023-04-22T16:18:07 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_loginFail_Wrong_Password status=SUCCESS method=LoginFailTest.tc03_loginFail_Wrong_Password(java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc03_loginFail_Wrong_Password(java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="tc03_loginFail_Wrong_Password" duration-ms="2416" started-at="2023-04-22T16:18:07 IDT" description="Check login failed with wrong password" data-provider="getDataPassword" finished-at="2023-04-22T16:18:09 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[inko.loga123456@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_loginFail_Wrong_Password -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="failedTest" is-config="true" duration-ms="1" started-at="2023-04-22T16:18:09 IDT" finished-at="2023-04-22T16:18:09 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_loginFail_Wrong_Password status=SUCCESS method=LoginFailTest.tc03_loginFail_Wrong_Password(java.lang.String,java.lang.String)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc05_loginFail_empty_Password_field()[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="tc05_loginFail_empty_Password_field" duration-ms="1798" started-at="2023-04-22T16:18:09 IDT" description="Check login failed with empty Password field" finished-at="2023-04-22T16:18:11 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc05_loginFail_empty_Password_field -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:18:11 IDT" finished-at="2023-04-22T16:18:11 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc05_loginFail_empty_Password_field status=SUCCESS method=LoginFailTest.tc05_loginFail_empty_Password_field()[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.Login.LoginFailTest@5ef8df1e]" name="treatDown" is-config="true" duration-ms="775" started-at="2023-04-22T16:18:11 IDT" finished-at="2023-04-22T16:18:12 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.Login.LoginFailTest -->
+      <class name="tests.Destinations.DestinationsFailSearchTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="setup" is-config="true" duration-ms="19557" started-at="2023-04-22T16:28:46 IDT" finished-at="2023-04-22T16:29:06 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc01_DestinationsSearchEmpty(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="tc01_DestinationsSearchEmpty" duration-ms="3556" started-at="2023-04-22T16:29:06 IDT" description="Check error message display in case of search for less than 2 chars." data-provider="getSearchWrongDataShort" finished-at="2023-04-22T16:29:09 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_DestinationsSearchEmpty -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:29:09 IDT" finished-at="2023-04-22T16:29:09 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_DestinationsSearchEmpty status=SUCCESS method=DestinationsFailSearchTest.tc01_DestinationsSearchEmpty(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc01_DestinationsSearchEmpty(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="tc01_DestinationsSearchEmpty" duration-ms="3404" started-at="2023-04-22T16:29:09 IDT" description="Check error message display in case of search for less than 2 chars." data-provider="getSearchWrongDataShort" finished-at="2023-04-22T16:29:13 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[h]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_DestinationsSearchEmpty -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:29:13 IDT" finished-at="2023-04-22T16:29:13 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_DestinationsSearchEmpty status=SUCCESS method=DestinationsFailSearchTest.tc01_DestinationsSearchEmpty(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_DestinationsSearchWrongData(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="tc02_DestinationsSearchWrongData" duration-ms="6409" started-at="2023-04-22T16:29:13 IDT" description="Check search message display in case of wrong search data." data-provider="getSearchWrongData" finished-at="2023-04-22T16:29:19 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[#*#&#@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_DestinationsSearchWrongData -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:29:19 IDT" finished-at="2023-04-22T16:29:19 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_DestinationsSearchWrongData status=SUCCESS method=DestinationsFailSearchTest.tc02_DestinationsSearchWrongData(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_DestinationsSearchWrongData(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="tc02_DestinationsSearchWrongData" duration-ms="6450" started-at="2023-04-22T16:29:19 IDT" description="Check search message display in case of wrong search data." data-provider="getSearchWrongData" finished-at="2023-04-22T16:29:26 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dfgdfgdg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_DestinationsSearchWrongData -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:29:26 IDT" finished-at="2023-04-22T16:29:26 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_DestinationsSearchWrongData status=SUCCESS method=DestinationsFailSearchTest.tc02_DestinationsSearchWrongData(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_DestinationsSearchWrongData(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="tc02_DestinationsSearchWrongData" duration-ms="6687" started-at="2023-04-22T16:29:26 IDT" description="Check search message display in case of wrong search data." data-provider="getSearchWrongData" finished-at="2023-04-22T16:29:32 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lkjls sdflsdjf sskdfslf sfjsl dfsfjewrowier sdkfjsdfj sljf lseirsfsdf sfskdf skdfwe rw erekfjhds]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_DestinationsSearchWrongData -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:29:32 IDT" finished-at="2023-04-22T16:29:32 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_DestinationsSearchWrongData status=SUCCESS method=DestinationsFailSearchTest.tc02_DestinationsSearchWrongData(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="tc02_DestinationsSearchWrongData(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="tc02_DestinationsSearchWrongData" duration-ms="6437" started-at="2023-04-22T16:29:32 IDT" description="Check search message display in case of wrong search data." data-provider="getSearchWrongData" finished-at="2023-04-22T16:29:39 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{}[]\/"";.,]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_DestinationsSearchWrongData -->
+        <test-method status="PASS" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="failedTest" is-config="true" duration-ms="0" started-at="2023-04-22T16:29:39 IDT" finished-at="2023-04-22T16:29:39 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_DestinationsSearchWrongData status=SUCCESS method=DestinationsFailSearchTest.tc02_DestinationsSearchWrongData(java.lang.String)[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedTest -->
+        <test-method status="PASS" signature="treatDown()[pri:0, instance:tests.Destinations.DestinationsFailSearchTest@7d61eccf]" name="treatDown" is-config="true" duration-ms="686" started-at="2023-04-22T16:29:39 IDT" finished-at="2023-04-22T16:29:39 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- treatDown -->
+      </class> <!-- tests.Destinations.DestinationsFailSearchTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
